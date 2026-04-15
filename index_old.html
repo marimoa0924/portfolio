@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Park Soyoon | 코딩하는 뮤덕</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <section id="hero" class="fullscreen flex-center fade-in-up">
+        <div class="hero-content interactive-hero">
+            <h2 class="slogan accent-text overlap-text top-text">코딩하는 뮤덕, 박소윤입니다.</h2>
+
+            <div class="model-container">
+                <model-viewer src="./flog.glb" alt="A 3D model" auto-rotate camera-controls interaction-prompt="hover"
+                    camera-orbit="0deg 75deg 210%" shadow-intensity="1" exposure="1"
+                    disable-zoom></model-viewer>
+            </div>
+
+            <h1 class="name overlap-text main-title">Park Soyoon</h1>
+            <p class="intro-line overlap-text bottom-text">아이디어를 구조로 만들고, 구조를 경험으로 구현합니다.</p>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Core Concepts Section -->
+    <section id="core-concepts" class="section-padding">
+        <div class="container">
+            <div class="concept-cards">
+                <div class="concept-card fade-in-up">
+                    <span class="concept-emoji">🔗</span>
+                    <h3>코딩과 창작을 연결하는 사람</h3>
+                </div>
+                <div class="concept-card fade-in-up delay-1">
+                    <span class="concept-emoji">🏗️</span>
+                    <h3>논리 구조를 설계하는 사람</h3>
+                </div>
+                <div class="concept-card fade-in-up delay-2">
+                    <span class="concept-emoji">💡</span>
+                    <h3>감성과 시스템을 동시에 다루는 사람</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section-padding offset-bg">
+        <div class="container">
+            <h2 class="section-title fade-in-up">About Me</h2>
+            <div class="about-grid fade-in-up delay-1">
+                <div class="about-text">
+                    <p>코딩과 창작의 교집합에서, 저는 <span class="highlight">추상적인 아이디어를 구체적인 시스템으로 변환</span>합니다.</p>
+                    <p>단순히 주어진 기능을 구현하는 것에 그치지 않습니다. 전체의 맥락을 고려하여 <strong style="color:var(--text-main)">단단한 로직을
+                            설계</strong>하고, 그 체계 위에서 사용자가 직접 조작하고 체감할 수 있는 <span class="highlight">경험을 창조</span>합니다.</p>
+                    <p>프로젝트를 처음 기획하는 단계부터 <strong style="color:var(--text-main)">아키텍처 설계와 최종 실행까지 직접 리드</strong>하며, 기술이
+                        사람과 어떤 방식으로 긍정적인 관계를 맺어야 하는지 끊임없이 고민하여 결과물로 증명합니다.</p>
+                </div>
+                <div class="about-image">
+                    <img src="profile.jpg" alt="Character" style="width: 100%; height: auto; border-radius: 20px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <h2 class="section-title fade-in-up">What I Built</h2>
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card card fade-in-up delay-1">
+                    <div class="project-info">
+                        <h3>Dormitory Assignment Optimization System</h3>
+                        <p class="project-oneliner">기숙사 배정 규칙과 학생 선호를 동시에 만족시키는 최적 배치 알고리즘 설계</p>
+                        <div class="project-details">
+                            <div class="detail-row"><span class="detail-label">문제</span> <span>기존 기숙사 방 배정은 규칙이 제대로 지켜지지
+                                    않거나, 학생 간 관계와 선호를 반영하기 어려움</span></div>
+                            <div class="detail-row"><span class="detail-label">역할</span> <span>구조체 기반 데이터 모델 설계, 완전탐색 및
+                                    가중치 기반 알고리즘 구현, 배정 결과의 불만족도를 수치화하는 기준 설계</span></div>
+                            <div class="detail-row"><span class="detail-label">결과</span> <span>규칙 충족과 선호 반영을 동시에 달성하는
+                                    시스템 구현, 다양한 조건을 유연하게 처리할 수 있는 구조 설계</span></div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tag tech-tag">C++</span>
+                            <span class="tag tech-tag">Algorithm Design</span>
+                            <span class="tag tech-tag">DFS</span>
+                            <span class="tag tech-tag">Optimization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card card fade-in-up delay-2">
+                    <div class="project-info">
+                        <h3>AI Narrative Film: Invisible Heroes</h3>
+                        <p class="project-oneliner">AI 기반 영상 제작을 통해 육체 노동 직군의 가치를 히어로 서사로 재구성한 프로젝트</p>
+                        <div class="project-details">
+                            <div class="detail-row"><span class="detail-label">문제</span> <span>육체 노동 직군의 가치는 일상 속에서 충분히
+                                    드러나지 않으며, 이를 직관적으로 전달할 수 있는 방식이 필요함</span></div>
+                            <div class="detail-row"><span class="detail-label">역할</span> <span>스토리 기획 및 구조 설계, 아이 인터뷰 기반
+                                    내러티브 구성, 직업군과 히어로 능력 매핑, AI 영상 생성 및 편집 파이프라인 구축</span></div>
+                            <div class="detail-row"><span class="detail-label">해결 방식</span> <span>히어로 서사를 활용해 직업의 의미를
+                                    재해석, 반복 구조를 통해 메시지를 강화, 현실과 서사의 경계를 활용한 감정 연출</span></div>
+                            <div class="detail-row"><span class="detail-label">결과</span> <span>제3회 AI 영화제 대상 수상, 스토리 중심
+                                    AI 콘텐츠 제작 경험 확보, 메시지를 구조화하는 방식 설계</span></div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tag tech-tag">AI Video</span>
+                            <span class="tag tech-tag">Image Generation</span>
+                            <span class="tag tech-tag">Narrative Design</span>
+                            <span class="tag tech-tag">Editing</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Archive Section -->
+    <section id="visual-archive" class="section-padding offset-bg">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Visual Archive</h2>
+            <div class="archive-grid">
+                <!-- Post 1 -->
+                <a href="https://www.instagram.com/p/DNNFc7lylgl/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                    class="archive-item fade-in-up" target="_blank" rel="noopener noreferrer">
+                    <img src="post1.jpg" alt="Instagram Post">
+                    <div class="archive-overlay">
+                        <span class="icon">📷</span>
+                    </div>
+                </a>
+                <!-- Post 2 -->
+                <a href="https://www.instagram.com/p/DMDgy4jyO6R" class="archive-item fade-in-up" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="post2.jpg" alt="Instagram Post">
+                    <div class="archive-overlay">
+                        <span class="icon">📷</span>
+                    </div>
+                </a>
+                <!-- Post 3 -->
+                <a href="https://www.instagram.com/p/DDpNs6qyTSc" class="archive-item fade-in-up" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="post3.jpg" alt="Instagram Post">
+                    <div class="archive-overlay">
+                        <span class="icon">📷</span>
+                    </div>
+                </a>
+                <!-- Post 4 -->
+                <a href="https://www.instagram.com/p/DDpNmxRyNfI" class="archive-item fade-in-up" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="post4.jpg" alt="Instagram Post">
+                    <div class="archive-overlay">
+                        <span class="icon">📷</span>
+                    </div>
+                </a>
+                <!-- Post 5 -->
+                <a href="https://www.instagram.com/p/DDpPDABSe7r" class="archive-item fade-in-up" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="post5.jpg" alt="Instagram Post">
+                    <div class="archive-overlay">
+                        <span class="icon">📷</span>
+                    </div>
+                </a>
+                <!-- Post 6 -->
+                <a href="https://www.instagram.com/p/DQTkJsXklmf" class="archive-item fade-in-up" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="post6.jpg" alt="Instagram Post">
+                    <div class="archive-overlay">
+                        <span class="icon">📷</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section id="experience" class="section-padding">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Experience</h2>
+            <div class="timeline">
+
+                <!-- University -->
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-period">대학교 <span class="year-range">2025 - </span></h3>
+                        <ul class="timeline-list">
+                            <li><span class="year">2026</span> 제3회 땀 흘려 일하는 사람들 AI 영화제 대상</li>
+                            <li><span class="year">2025</span> 삼성리더스클럽 1기</li>
+                            <li><span class="year">2025</span> 교수학습혁신센터 성균공부방: Share via AI 우수상</li>
+                            <li><span class="year">2025</span> Learning Fair SW융합대학장상</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- High School -->
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-period">고등학교 <span class="year-range">2022 - 2024</span></h3>
+                        <ul class="timeline-list">
+                            <li><span class="year">2022-2024</span> 한민고등학교 홍보대사 한얼 활동</li>
+                            <li><span class="year">2022-2024</span> 한민고등학교 재학생 단체 한아름 사업부 부장</li>
+                            <li><span class="year">2023</span> 정보올림피아드 동상 (전체/일반고)</li>
+                            <li><span class="year">2023</span> 알고리즘/코딩 동아리 기장</li>
+                            <li><span class="year">2022</span> SFPC 프로그래밍 챌린지 5위</li>
+                            <li><span class="year">2022</span> 정보올림피아드 동상 (전체/일반고)</li>
+                            <li><span class="year">2022</span> 알고리즘/코딩 동아리 부기장</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 
+                Middle School
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-period">중학교 <span class="year-range">2019 - 2020</span></h3>
+                        <ul class="timeline-list">
+                            <li><span class="year">2020</span> 민족사관고등학교 토론 캠프 차석</li>
+                            <li><span class="year">2020</span> 대진대학교 과학 영재원 중등사사</li>
+                            <li><span class="year">2019</span> 의정부시 청소년종합예술제 산문부문 최우수상</li>
+                            <li><span class="year">2019</span> 의정부시 청소년의원회 의원</li>
+                            <li><span class="year">2019</span> 대진대학교 과학 영재원 중등심화</li>
+                        </ul>
+                    </div>
+                </div>
+
+                Elementary School 
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-period">초등학교 <span class="year-range">2016 - 2018</span></h3>
+                        <ul class="timeline-list">
+                            <li><span class="year">2018</span> 대진대학교 과학영재원 초등심화</li>
+                            <li><span class="year">2017</span> 의정부시 청소년종합예술제 산문부문 최우수상</li>
+                            <li><span class="year">2016</span> 호암초등학교 과학영재원 장려상</li>
+                            <li><span class="year">2016</span> 어린이동아 기자 활동</li>
+                        </ul>
+                    </div>
+                </div>
+                -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding offset-bg">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Skills</h2>
+
+            <div class="skills-grid">
+                <div class="skill-category card fade-in-up delay-1">
+                    <h3>Programming</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="tag">Python</span>
+                            <span class="skill-desc">데이터 기반 문제 해결 및 핵심 로직 결합</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="tag">C / C++</span>
+                            <span class="skill-desc">자료구조 분석 및 알고리즘 최적화 설계</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category card fade-in-up delay-2">
+                    <h3>Creative Tools</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="tag">Unity</span>
+                            <span class="skill-desc">실시간 렌더링 환경에서의 인터랙티브 사용자 경험 구축</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="tag">Blender 3D</span>
+                            <span class="skill-desc">3차원 가상 환경 시각화 및 모델 구조 세팅</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="tag">Ps / Lr</span>
+                            <span class="skill-desc">데이터와 로직을 시각적인 스토리로 다듬는 에셋 처리</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog / Thoughts Placeholder -->
+    <section id="thoughts" class="section-padding">
+        <div class="container">
+            <h2 class="section-title fade-in-up">생각과 기록</h2>
+            <div class="thoughts-grid">
+                <div class="thought-card card fade-in-up">
+                    <div class="thought-placeholder-img"></div>
+                    <div class="thought-content">
+                        <span class="thought-date">Coming Soon</span>
+                        <h3>코딩과 무대의 공통점</h3>
+                        <p>새로운 글이 추가될 예정입니다.</p>
+                    </div>
+                </div>
+                <div class="thought-card card fade-in-up delay-1">
+                    <div class="thought-placeholder-img"></div>
+                    <div class="thought-content">
+                        <span class="thought-date">Coming Soon</span>
+                        <h3>SF가 기술을 다루는 방식에 대하여</h3>
+                        <p>새로운 글이 추가될 예정입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact" class="section-padding footer-bg">
+        <div class="container text-center fade-in-up">
+            <h2 class="section-title">Let's Connect</h2>
+            <h3 class="contact-statement accent-text">저는 구조를 설계하고, 그것을 경험으로 만드는 사람입니다.</h3>
+            <p class="contact-desc">함께 만들어갈 새로운 무대를 기대합니다.</p>
+            <div class="contact-links">
+                <a href="mailto:vio_raccoon@naver.com" class="contact-btn">
+                    <span class="btn-icon">✉️</span> vio_raccoon@naver.com
+                </a>
+                <a href="tel:010-4842-8539" class="contact-btn">
+                    <span class="btn-icon">📞</span> 010-4842-8539
+                </a>
+            </div>
+            <p class="copyright">© 2026 Park Soyoon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
